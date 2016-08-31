@@ -7,8 +7,8 @@ app.controller('LoginCtrl', ['ENV', '$scope', '$http', '$state', '$stateParams',
             strAgentID: '',
             strPassWord: '',
             strRole: '',
-            CurRole: '1',
-            NewRole: '1'
+            CurRole: '2',
+            NewRole: '2'
         };
 
         $scope.roles = [{
@@ -140,9 +140,9 @@ app.controller('LoginCtrl', ['ENV', '$scope', '$http', '$state', '$stateParams',
         };
 
         if (window.cordova) {
-            $scope.logininfo.strRole = 'Driver';
+            $scope.logininfo.strRole = 'Agent';
         } else {
-            $scope.logininfo.strRole = 'Driver';
+            $scope.logininfo.strRole = 'Agent';
         }
 
         $('#iDriverID').on('keydown', function (e) {

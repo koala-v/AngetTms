@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+returnMain	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.returnMain = function () {$/;"	function	line:10
+showFilterBar	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.showFilterBar = function () {$/;"	function	line:16
+expression	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^                expression: function (filterText, value, index, array) {$/;"	function	line:19
+update	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^                update: function (filteredItems, filterText) {$/;"	function	line:23
+refreshItems	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.refreshItems = function () {$/;"	function	line:32
+$timeout	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^            $timeout(function () {$/;"	function	line:37
+goAgentDetail	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.goAgentDetail = function (job) {$/;"	function	line:42
+getObjjmjm1	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        var getObjjmjm1 = function (Objjmjm1) {$/;"	function	line:50
+showjmjm1	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        var showjmjm1 = function () {$/;"	function	line:62
+success	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^                        ApiService.Get(objUri, true).then(function success(result) {$/;"	function	line:81
+success	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^                        ApiService.Get(objUri, true).then(function success(result) {$/;"	function	line:98
+checkDateTime	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        var checkDateTime = function (obj, type) {$/;"	function	line:144
+OnTimePicker	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.OnTimePicker = function (Type) {$/;"	function	line:185
+callback	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^                callback: function (val) { \/\/Mandatory$/;"	function	line:187
+OnDatePicker	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.OnDatePicker = function (Type) {$/;"	function	line:210
+callback	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^                callback: function (val) { \/\/Mandatory$/;"	function	line:212
+gotoConfirm	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.gotoConfirm = function () {$/;"	function	line:226
+success	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^                    ApiService.Post(objUri, jsonData, true).then(function success(result) {$/;"	function	line:259
+returnList	C:\Users\Administrator\Desktop\TAN TMS\AngetTms\TMS\www\view\agent\agentjoblisting.js	/^        $scope.returnList = function () {$/;"	function	line:272

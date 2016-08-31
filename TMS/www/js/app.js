@@ -1,5 +1,5 @@
 'use strict';
-var app = angular.module('TMS', [
+var app = angular.module('tanAgent', [
     'ionic',
     'ionicLazyLoad',
     'ionic-datepicker',
@@ -38,15 +38,11 @@ app.run(['ENV', '$ionicPlatform', '$rootScope', '$state', '$location', '$timeout
                     SqlService.Drop('Todr1_Rcbp1').then(function (res) {
                         SqlService.Create('Todr1_Rcbp1', TABLE_DB.Todr1_Rcbp1).then(function (res) {});
                     });
-                    SqlService.Drop('Aemp1_Aido1').then(function (res) {
-                        SqlService.Create('Aemp1_Aido1', TABLE_DB.Aemp1_Aido1).then(function (res) {});
-                    });
                     SqlService.Drop('Jmjm1').then(function (res) {
                         SqlService.Create('Jmjm1', TABLE_DB.Jmjm1).then(function (res) {});
                     });
                 } else {
                     SqlService.Create('Todr1_Rcbp1', TABLE_DB.Todr1_Rcbp1).then(function (res) {});
-                    SqlService.Create('Aemp1_Aido1', TABLE_DB.Aemp1_Aido1).then(function (res) {});
                     SqlService.Create('Jmjm1', TABLE_DB.Jmjm1).then(function (res) {});
                 }
             });
@@ -171,6 +167,7 @@ app.config(['ENV', '$stateProvider', '$urlRouterProvider', '$ionicConfigProvider
             })
             .state('index.main', {
                 url: '/main',
+                cache: 'false',
                 views: {
                     'menuContent': {
                         templateUrl: "view/main/main.html",
@@ -178,13 +175,8 @@ app.config(['ENV', '$stateProvider', '$urlRouterProvider', '$ionicConfigProvider
                     }
                 }
             })
-            .state('googleMaps', {
-                url: '/googleMaps/googleMaps',
-                cache: 'false',
-                templateUrl: 'view/googleMaps/googleMaps.html',
-                controller: 'GoogleMapCtrl'
-            })
-            .state('index.setting', {
+
+        .state('index.setting', {
                 url: '/setting/setting',
                 views: {
                     'menuContent': {
@@ -214,18 +206,6 @@ app.config(['ENV', '$stateProvider', '$urlRouterProvider', '$ionicConfigProvider
                     }
                 }
             })
-            .state('jobListingList', {
-                url: '/joblisting/list',
-                cache: 'false',
-                templateUrl: 'view/joblisting/list.html',
-                controller: 'JoblistingListCtrl'
-            })
-            .state('jobListingDetail', {
-                url: '/joblisting/detail/:key',
-                cache: 'false',
-                templateUrl: 'view/joblisting/detail.html',
-                controller: 'JoblistingDetailCtrl'
-            })
             .state('upload', {
                 url: '/Upload/:Key/:TableName',
                 templateUrl: 'view/joblisting/Upload.html',
@@ -239,25 +219,8 @@ app.config(['ENV', '$stateProvider', '$urlRouterProvider', '$ionicConfigProvider
                         controller: 'goDriverCodeCtrl'
                     }
                 }
-            })
-            .state('dailycompleted', {
-                url: '/dailycompleted/dailylist',
-                cache: 'false',
-                templateUrl: 'view/dailycompleted/dailylist.html',
-                controller: 'dailycompletedCtrl'
-            })
-            .state('jobListingConfirm', {
-                url: '/joblisting/confirm/:key',
-                cache: 'false',
-                templateUrl: 'view/joblisting/confirm.html',
-                controller: 'JoblistingConfirmCtrl'
-            })
-            .state('reports', {
-                url: '/reports',
-                cache: 'false',
-                templateUrl: 'view/reports/list.html',
-                controller: 'reportsListCtrl'
             });
+
         $urlRouterProvider.otherwise('/splash');
         /*
         $ionicFilterBarConfigProvider.theme('calm');
