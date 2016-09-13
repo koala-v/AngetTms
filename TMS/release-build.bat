@@ -15,3 +15,7 @@ xcopy /y "%~dp0platforms\android\build\outputs\apk\Tan-Agent.apk" "%~dp0"
 del "%~dp0platforms\android\build\outputs\apk\Tan-Agent.apk" /f /q
 
 pause
+
+
+
+
