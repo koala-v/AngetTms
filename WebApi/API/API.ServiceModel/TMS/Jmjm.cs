@@ -72,8 +72,8 @@ namespace WebApi.ServiceModel.TMS
                                         int count = db.Scalar<int>("Select Count(JobNo) from Jmjm3 where JobNo='" + Modfunction.SQLSafe(strJobNo) + "' and Description = 'ACTUAL ARRIVAL DATE'" );
                                         if (count > 0)
                                         {
-                                          db.Update("Jmjm3",
-                                              " DateTime = '" + Modfunction.SQLSafe(strActualArrivalDate) + "'",
+                                    db.Update("Jmjm3",
+                                      " DateTime = '" + Modfunction.SQLSafe(strActualArrivalDate) + "'",
                                               " JobNo='" + Modfunction.SQLSafe(strJobNo) + "' and Description = 'ACTUAL ARRIVAL DATE'");
                                         }
                                         else {

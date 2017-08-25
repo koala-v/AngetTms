@@ -1,13 +1,13 @@
 'use strict';
 var appConfig = angular.module('TMS.config', []);
 appConfig.constant('ENV', {
-    website: 'www.sysfreight.net/app/tms/tan',
-     api: 'www.sysfreight.net/apis/tms/tan',
+    website: 'www.sysfreight.net/app/tms/anget',
+     api: 'www.sysfreight.net/apis/tms/anget',
     // api: 'http://localhost:62787/',
-    api:  'localhost:2442',
+    // api:  'localhost:9249',
     reset: {
-        'website': 'www.sysfreight.net/app/tms/tan',
-        'api': 'www.sysfreight.net/apis/tms/tan',
+        'website': 'www.sysfreight.net/app/tms/anget',
+        'api': 'www.sysfreight.net/apis/tms/anget',
         'port': '8081'
     },
 
